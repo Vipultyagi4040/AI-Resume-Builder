@@ -4,10 +4,10 @@
   "private": true,
   "description": "AI Resume Builder - Full stack project",
   "scripts": {
-    "start": "node server/server.js",
-    "dev": "node server/server.js",
     "install:server": "cd server && npm install",
-    "build": "echo 'Build completed'",
+    "build": "cd server && npm install",
+    "start": "cd server && node server.js",
+    "dev": "cd server && node server.js",
     "vercel-build": "cd Frontend && npm install && npm run build"
   },
   "engines": {
