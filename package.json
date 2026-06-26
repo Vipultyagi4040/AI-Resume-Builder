@@ -7,8 +7,7 @@
     "install:server": "cd server && npm install",
     "build": "cd server && npm install",
     "start": "cd server && node server.js",
-    "dev": "cd server && node server.js",
-    "vercel-build": "cd Frontend && npm install && npm run build"
+    "dev": "cd server && node server.js"
   },
   "engines": {
     "node": ">=18.0.0"
