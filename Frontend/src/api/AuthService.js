@@ -2,7 +2,7 @@ import axios from "axios";
 
 const isProduction = import.meta.env.PROD;
 const baseURL = isProduction
-  ? (import.meta.env.VITE_API_URL || "https://your-backend-url.onrender.com")
+  ? (import.meta.env.VITE_API_URL || "https://your-api-url.onrender.com")
   : "http://localhost:9090";
 
 const authApi = axios.create({

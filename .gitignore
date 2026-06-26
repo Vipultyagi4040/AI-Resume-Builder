@@ -1,10 +1,10 @@
 # Dependencies
 Frontend/node_modules/
-Backend/.mvn/wrapper/maven-wrapper.jar
+server/node_modules/
 
 # Build outputs
-Backend/target/
 Frontend/dist/
+server/.env
 
 # Environment files
 .env
@@ -28,5 +28,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # Test
-Backend/target/
 Frontend/coverage/
