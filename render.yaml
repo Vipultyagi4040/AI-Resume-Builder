@@ -4,8 +4,8 @@ services:
     runtime: node
     plan: free
     rootDir: server
-    buildCommand: cd ../ && npm install && cd server && npm install
-    startCommand: npm start
+    buildCommand: npm install
+    startCommand: node server.js
     healthCheckPath: /api/v1/health
     envVars:
       - key: NODE_ENV
