@@ -10,19 +10,31 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
+      - key: PORT
+        value: 10000
       - key: DB_HOST
-        value: roundhouse.proxy.rlwy.net
+        sync: false
       - key: DB_PORT
         value: 3306
       - key: DB_USER
-        value: root
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
       - key: DB_NAME
-        value: railway
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GOOGLE_CLIENT_ID
+        sync: false
       - key: JWT_SECRET
         generateValue: true
       - key: EMAIL_HOST
         value: smtp.gmail.com
       - key: EMAIL_PORT
         value: 587
+      - key: EMAIL_USER
+        sync: false
+      - key: EMAIL_PASS
+        sync: false
       - key: EMAIL_FROM
         value: noreply@airesumebuilder.com
